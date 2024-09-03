@@ -1,4 +1,4 @@
-import { ArrowDownToLine, Bell, BookCopy, ChevronRight, Clock4, History, HomeIcon, ListVideo, Menu, Mic, Play, Podcast, Search, SquarePlay, SquarePlus, ThumbsUp, TvMinimal, TvMinimalPlay } from 'lucide-react'
+import { ArrowDown, ArrowDownToLine, Bell, BookCopy, ChevronDown, ChevronRight, Clock4, History, HomeIcon, ListVideo, Menu, Mic, Play, Podcast, Search, SquarePlay, SquarePlus, ThumbsUp, TvMinimal, TvMinimalPlay } from 'lucide-react'
 import Image from 'next/image';
 
 export default function Home() {
@@ -90,7 +90,65 @@ export default function Home() {
             </a>
           </nav>
           <hr className='mt-5 mb-5 border-zinc-700' />
-
+          <nav className='flex flex-col gap-4 text-sm'>
+            <a href="#" className='flex items-center gap-2 text-lg'>
+              Inscrições
+            </a>
+            <a href="#" className='flex text-start gap-6 items-center'>
+              <Image
+                className='rounded-full'
+                src="/char.png"
+                height={24}
+                width={24}
+                alt='uma descrição legal da imagem'
+              />
+              Rocketseat
+            </a>
+            <a href="#" className='flex text-start gap-6 items-center'>
+              <Image
+                className='rounded-full'
+                src="/char.png"
+                height={24}
+                width={24}
+                alt='uma descrição legal da imagem'
+              />
+              Crie Seus Jogos
+            </a>
+            <a href="#" className='flex text-start gap-6 items-center'>
+              <Image
+                className='rounded-full'
+                src="/char.png"
+                height={24}
+                width={24}
+                alt='uma descrição legal da imagem'
+              />
+              Manual do mundo
+            </a>
+            <a href="#" className='flex text-start gap-6 items-center'>
+              <Image
+                className='rounded-full'
+                src="/char.png"
+                height={24}
+                width={24}
+                alt='uma descrição legal da imagem'
+              />
+              MaxPalaro
+            </a>
+            <a href="#" className='flex text-start gap-6 items-center'>
+              <Image
+                className='rounded-full'
+                src="/char.png"
+                height={24}
+                width={24}
+                alt='uma descrição legal da imagem'
+              />
+              CNN - Brasil
+            </a>
+            <a href="#" className='flex text-start gap-6 items-center'>
+              <ChevronDown strokeWidth={1} absoluteStrokeWidth />
+              Mostrar mais
+            </a>
+          </nav>
         </div>
 
         <main className='flex-grow p-4 w-9/12 bg-zinc-500'>
