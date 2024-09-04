@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowDownToLine, Bell, BookCopy, ChevronDown, ChevronRight, Clock4, History, HomeIcon, ListVideo, Menu, Mic, Play, Podcast, Search, SquarePlay, SquarePlus, ThumbsUp, TvMinimal, TvMinimalPlay } from 'lucide-react'
+import { ArrowDownToLine, Bell, BookCopy, ChevronDown, ChevronRight, Clock4, EllipsisVertical, History, HomeIcon, ListVideo, Menu, Mic, Play, Podcast, Search, SquarePlay, SquarePlus, ThumbsUp, TvMinimal, TvMinimalPlay } from 'lucide-react'
 import Image from 'next/image';
 
 export default function Home() {
@@ -35,8 +35,8 @@ export default function Home() {
         </div>
       </nav>
       <div className='flex gap-4 h-screen w-full mt-2 pr-4'>
-        <div className='flex flex-col flex-1 py-4 px-6'>
-          <nav className='flex flex-col w-full space-y-4 '>
+        <div className='flex flex-col flex-1 py-4'>
+          <nav className='flex flex-col w-full px-6 space-y-4 '>
             <a href="#" className='flex gap-6 items-cente'>
               <HomeIcon strokeWidth={1} absoluteStrokeWidth />
               <span className='text-sm'>Início</span>
@@ -54,8 +54,8 @@ export default function Home() {
               <span className='text-sm'>YouTube Music</span>
             </a>
           </nav>
-          <hr className='mt-5 mb-5 border-zinc-700' />
-          <nav className='flex flex-col gap-4 text-sm'>
+          <hr className=' items-center mt-5 mb-5 ml-5 border-zinc-700' />
+          <nav className='flex flex-col gap-4 px-6 text-sm'>
             <a href="#" className='flex items-center gap-2 text-lg'>
               Você
               <ChevronRight size={18} />
@@ -90,7 +90,7 @@ export default function Home() {
             </a>
           </nav>
           <hr className='mt-5 mb-5 border-zinc-700' />
-          <nav className='flex flex-col gap-4 text-sm'>
+          <nav className='flex flex-col gap-4 px-6 text-sm'>
             <a href="#" className='flex items-center gap-2 text-lg'>
               Inscrições
             </a>
@@ -150,9 +150,533 @@ export default function Home() {
             </a>
           </nav>
         </div>
-
-        <main className='flex-grow p-4 w-9/12 bg-zinc-500'>
-          alguma coisa
+        <main className='flex-grow p-2 w-9/12'>
+          <div className='flex justify-between items-center'>
+            <div className='flex gap-4 text-sm'>
+              <a href="#" className='flex justify-center items-center rounded-md bg-white text-zinc-900 py-1 px-2'>
+                Tudo
+              </a>
+              <a href="#" className='flex justify-center items-center rounded-md bg-zinc-700 py-1 px-2'>
+                Música
+              </a>
+              <a href="#" className='flex justify-center items-center rounded-md bg-zinc-700 py-1 px-2'>
+                Jogos
+              </a>
+              <a href="#" className='flex justify-center items-center rounded-md bg-zinc-700 py-1 px-2'>
+                Dark Ambient
+              </a>
+              <a href="#" className='flex justify-center items-center rounded-md bg-zinc-700 py-1 px-2'>
+                Música Ambiente
+              </a>
+              <a href="#" className='flex justify-center items-center rounded-md bg-zinc-700 py-1 px-2'>
+                Mixes
+              </a>
+              <a href="#" className='flex justify-center items-center rounded-md bg-zinc-700 py-1 px-2'>
+                Ao vivo
+              </a>
+              <a href="#" className='flex justify-center items-center rounded-md bg-zinc-700 py-1 px-2'>
+                Jogos de simulação de vida
+              </a>
+              <a href="#" className='flex justify-center items-center rounded-md bg-zinc-700 py-1 px-2'>
+                Jogos de aventura
+              </a>
+              <a href="#" className='flex justify-center items-center rounded-md bg-zinc-700 py-1 px-2'>
+                Vocal Music
+              </a>
+              <a href="#" className='flex justify-center items-center rounded-md bg-zinc-700 py-1 px-2'>
+                Podcast
+              </a>
+              <a href="#" className='flex justify-center items-center rounded-md bg-zinc-700 py-1 px-2'>
+                Emviados recentemente
+              </a>
+              <a href="#" className='flex justify-center items-center rounded-md bg-zinc-700 py-1 px-2'>
+                Assistidos
+              </a>
+            </div>
+            <ChevronRight strokeWidth={1} absoluteStrokeWidth />
+          </div>
+          <div className='grid grid-cols-5 mt-8'>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col items-center px-2 justify-center mb-12'>
+              <Image
+                width={320}
+                height={80}
+                src="/capa.jpg"
+                alt='uma capa de um vídeo legal do Youtube'
+                className=' rounded-xl'
+              />
+              <div className='flex mt-3 gap-3'>
+                <div>
+                  <Image
+                    width={48}
+                    height={48}
+                    src="/char.png"
+                    alt='Capa do canal'
+                    className=' rounded-full'
+                  />
+                </div>
+                <div className='flex flex-col gap-1 text-sm'>
+                  <h3>Um vídeo muito legal do Youtube | Que vai ensinar algo...</h3>
+                  <div className='flex flex-col text-zinc-400'>
+                    <span>Canal das ideias</span>
+                    <span>94 mil visualizações • há 2 meses</span>
+                  </div>
+                </div>
+                <div>
+                  <a href="#">
+                    <EllipsisVertical strokeWidth={1} absoluteStrokeWidth />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
     </>
