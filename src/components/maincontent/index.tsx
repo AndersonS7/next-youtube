@@ -10,7 +10,7 @@ const MainContent = () => {
                 <Preference />
                 <ChevronRight strokeWidth={1} absoluteStrokeWidth />
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 mt-8'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 mt-8'>
                 <CardVideo key={1}
                     covervideo={<Image
                         width={345}
@@ -291,7 +291,7 @@ const MainContent = () => {
                     time='semandas'
                     timenumber={2}
                     view={152} />
-                <CardVideo key={14}
+                <CardVideo key={15}
                     covervideo={<Image
                         width={345}
                         height={80}

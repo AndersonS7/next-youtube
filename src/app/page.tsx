@@ -1,6 +1,6 @@
 import Header from '@/components/header';
 import MainContent from '@/components/maincontent';
-import LeftNav from '@/components/nav';
+import LeftNav from '@/components/navleft';
 
 export default function Home() {
   return (
