@@ -38,7 +38,7 @@ const LeftNav = () => {
                         height={24}
                         width={24}
                         alt='uma descrição legal da imagem' />}
-                    title='Rocketseat' />
+                    title='Rocketseat ' />
                 <CardSubscribe
                     image={<Image
                         className='rounded-full'
